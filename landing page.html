@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        img
+        {
+            height: 100px;
+            border-radius: 50px;
+        }
+        header .logo
+        {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        .pepsi
+        {
+            height: 500px;
+            border-radius: 70px;
+        }
+        p
+        {
+            color: aliceblue;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ font-family:'Poppins',sans-serif;
+}
+section
+{
+ position:relative;
+ width:100%;
+ min-height:100vh;
+ padding:100px;
+ display:flex;
+ justify-content:space-between;
+  align-items:center;
+ background:#e20101;
+  transition:0.5s;
+}
+header
+{
+ position:absolute;
+  top:0;
+  Left:0;
+ width:100%;
+ padding:20px 100px;
+ display:flex;
+ justify-content:space-between;
+}
+header .logo
+{
+ position:relative;
+ max-width:px;
+ position:relative;
+ display:flex;
+ transition: transform .7s ease-in-out;
+}
+header .logo:hover
+{
+    transform: rotate(360deg);
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+  List-style:none;
+}
+header ul li a
+{
+ display:inline-block;
+  color:#fff;
+ font-weight:400;
+ margin-left:40px;
+ text-decoration: none;
+}
+.content
+{
+ position:relative;
+ width:100%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+.content .textBox
+{
+ position:relative;
+ max-width:600px;
+}
+.content .textBox h2
+{
+  color:#fff;
+ font-size:4em;
+  Line-height:1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.content .textBox h2 span
+{
+ font-size:2em;
+}
+.content .textBoxp
+{
+ color:#fff;
+}
+.content .textBox a
+{
+ display:inline-block;
+ margin-top:20px;
+ padding:8px 20px;
+ background:#fff;
+ color:#111;
+ border-radius:40px;
+ font-weight:500;
+ Letter-spacing:1px;
+ text-decoration:none;
+}
+.content .imgBox
+{
+ width:600px;
+ display:flex;
+ padding-right:50px;
+ margin-top:50px;
+ justify-content:flex-end;
+}
+.content .imgBox img
+{
+ max-width:260px;
+}
+.thumb
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display:flex;
+}
+.thumb li
+{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.05s;
+
+}
+.thumb li :hover
+{
+    transform: translateY(-10px);
+}
+.thumb li img
+{
+    width: 70px;
+    height: 90px;
+}
+#img
+{
+    border-radius: 57px;
+}
+#img2
+{
+    border-radius: 60px;
+    height: 100px;
+}
+.sci
+{
+    position: absolute;
+    top: 350px;
+    right:30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+    display: inline-block;
+    filter: invert(1);
+    margin:  5px  0px;
+    transform: scale(0.6);
+}
+.sci li a img
+{
+    height: 70px;
+    width: 70px;
+    padding: -66px;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <section class="sec">
+        <header>
+      <a href="https://www.coca-colacompany.com/"><img src="coca-cola-logo.svg"class="logo"></a>
+          <ul>
+             <li><a href="#"> Home </a></li>
+             <li><a href="https://www.coca-colacompany.com/brands"> Products </a></li>
+             <li><a href="#"> What's New </li></a>
+             <li><a href="#"> Newsletter </li></a>
+             <li><a href="#"> Contact</li></a>
+          </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+               <h2>ALL YOUR<br>
+                FAVORITE FLAVORS<br>
+                ALL RIGHT HERE.<br><!--<span>I like</span>--></h2>
+               <p>cola. Diet coac. coac with Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our coca-cola products.</p>
+               <a href="https://www.coca-colaindia.com/brands/coca-cola     "> View All Products </a>
+            </div>
+            <div class="imgbox">
+                <img src="coca.ng.png.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="coca.ng.png.png" onmouseover="imgslider('coca.ng.png.png');changecolour('#FF0000')"></li>
+            <li><img src="diatcoac.png" onmouseover="imgslider('diatcoac.png');changecolour('#e60c2c')" id="img"></li>
+            <li><img src="zerosuger.png.png" onmouseover="imgslider('zerosuger.png.png');changecolour('#1e1e1e')" id="img2"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/cocacolaindia/"><img src="FACEBOOK.png"></a></li>
+            <li><a href="https://www.instagram.com/cocacola_india/?hl=en"><img src="Picsart_22-06-05_14-58-44-689.png"></a></li>
+            <li><a href="https://twitter.com/cocacolaco"><img src="Picsart_22-06-05_14-47-26-802.png"></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgslider(anything){
+            document.querySelector('.pepsi').src=anything;
+        }
+        function changecolour(color){
+            const sec=document.querySelector('.sec')
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+</html>
+
+
